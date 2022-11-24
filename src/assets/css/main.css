@@ -24,11 +24,19 @@
     background-color: #3b3ffc;
 }
 
-
 .badge-primary{
     background-color: var(--primary);
 }
 
 .text-primary{
    color:var(--primary) !important;
+}
+
+.card-product{
+    border-radius: 5%;
+}
+
+.card-img-top{
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%;
 }
