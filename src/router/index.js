@@ -2,19 +2,25 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import MenuView from '../views/MenuView.vue'
+import MenuDetail from '../views/MenuDetail.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'home',
+    name: 'Home',
     component: HomeView
   },
   {
     path: '/menu',
-    name: 'menu',
+    name: 'Menu',
     component: MenuView
+  },
+  {
+    path: '/menu/:id',
+    name: 'MenuDetail',
+    component: MenuDetail
   },
   {
     path: '/about',

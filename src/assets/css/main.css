@@ -40,3 +40,16 @@
     border-top-right-radius: 5%;
     border-top-left-radius: 5%;
 }
+
+.breadcrumb{
+    background-color: transparent;
+    padding: 0;
+}
+
+.breadcrumb-item.active{
+    font-weight: bold;
+}
+
+.img-fluid{
+    border-radius: 7%;
+}
