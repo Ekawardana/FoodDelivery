@@ -10,15 +10,16 @@
 
         <div class="row mb-3">
             <div class="col-sm-8">
-                <div class="input-group mt-3">
-                    <input type="text" v-model="search" class="form-control" placeholder="Cari Makanan.." @keyup="searchMenu" />
-
+                <b-input-group class="mt-3">
+                    <b-form-input type="text" v-model="search" class="form-control" placeholder="Cari Makanan.." @keyup="searchMenu" ></b-form-input>
+                    
                     <b-input-group-append>
                         <b-button variant="primary">
                             <b-icon icon="search"></b-icon>
                         </b-button>
                     </b-input-group-append>
-                </div>
+                </b-input-group>
+                
             </div>
         </div>
 

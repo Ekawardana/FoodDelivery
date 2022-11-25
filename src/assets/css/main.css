@@ -1,42 +1,42 @@
-:root{
-    --primary:#4A4EFF;
+:root {
+    --primary: #4A4EFF;
     --secondary: #8D8FF1;
 }
 
-#app{
+#app {
     font-family: 'Nunito';
 }
 
-.nav-item{
+.nav-item {
     font-size: large;
     font-weight: bold;
 }
 
-.router-link-exact-active{
+.router-link-exact-active {
     font-weight: 900;
 }
 
-.btn-primary{
+.btn-primary {
     background-color: var(--primary);
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     background-color: #3b3ffc;
 }
 
-.badge-primary{
+.badge-primary {
     background-color: var(--primary);
 }
 
-.text-primary{
-   color:var(--primary) !important;
+.text-primary {
+    color: var(--primary) !important;
 }
 
-.card-product{
+.card-product {
     border-radius: 5%;
 }
 
-.card-img-top{
+.card-img-top {
     border-top-right-radius: 5%;
     border-top-left-radius: 5%;
 }

@@ -1,31 +1,35 @@
 <template>
-<nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container">
-        <a class="navbar-brand" href="#">E-Resto</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<div class="Navbar">
+    <!-- Navbar -->
+    <b-navbar toggleable type="light" class="navbar-expand-lg">
+        <div class="container">
+            <b-navbar-brand href="/">
+                <img src="assets/logo.png" width="60px" />
+            </b-navbar-brand>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
+            <b-navbar-toggle target="navbar-toggle-collapse">
+                <template #default="{ expanded }">
+                    <b-icon v-if="expanded" icon="chevron-bar-up"></b-icon>
+                    <b-icon v-else icon="chevron-bar-down"></b-icon>
+                </template>
+            </b-navbar-toggle>
+
+            <b-collapse id="navbar-toggle-collapse" is-nav>
+                <b-navbar-nav class="mr-auto nav-item">
                     <router-link class="nav-link" to="/">Home</router-link>
-                </li>
-                <li class="nav-item">
                     <router-link class="nav-link" to="/menu">Menu</router-link>
-                </li>
-            </ul>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
+                </b-navbar-nav>
+                <b-navbar-nav class="ml-auto nav-item">
                     <router-link class="nav-link" to="/keranjang">Keranjang
                         <b-icon icon="bag"></b-icon>
                         <span class="badge badge-primary ml-2">0</span>
                     </router-link>
-                </li>
-            </ul>
+                </b-navbar-nav>
+
+            </b-collapse>
         </div>
-    </div>
-</nav>
+    </b-navbar>
+</div>
 </template>
 
 <script>

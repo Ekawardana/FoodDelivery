@@ -31,9 +31,9 @@
                     <div class="justify-content-center align-self-center">
                         <h2><strong class="text-primary">Favorite Foods Menu,</strong><br>In Your Gadget</h2>
                         <p>Segera pesan makanan favorit anda sebelum kehabisan!</p>
-                        <button class="btn btn-lg btn-primary">
-                            <b-icon icon="bell-fill" class="mr-2"></b-icon>Pesan
-                        </button>
+                        <router-link class="btn btn-lg btn-primary" to="/menu">
+                            <b-icon icon="cart-plus" class="mr-2"></b-icon>Pesan
+                        </router-link>
                     </div>
                 </div>
             </div>
