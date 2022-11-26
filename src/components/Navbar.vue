@@ -22,7 +22,7 @@
                 <b-navbar-nav class="ml-auto nav-item">
                     <router-link class="nav-link" to="/keranjang">Keranjang
                         <b-icon icon="bag"></b-icon>
-                        <span class="badge badge-primary ml-2">0</span>
+                        <span class="badge badge-primary ml-2">{{jumlah_pesanans.length}}</span>
                     </router-link>
                 </b-navbar-nav>
 
@@ -33,8 +33,27 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
-    name: 'NavbarItem'
+    name: 'NavbarItem',
+    data() {
+        return {
+            jumlah_pesanans: {}
+        }
+    },
+    methods: {
+        setJumlah(data) {
+            this.jumlah_pesanans = data
+        }
+    },
+    mounted() {
+        // Make a request for a user with a given ID
+        axios.get("http://localhost:3000/keranjangs")
+            .then((response) => this.setJumlah(response.data))
+            .catch((error) => console.log(error))
+    }
+
 }
 </script>
 

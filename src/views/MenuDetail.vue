@@ -28,17 +28,18 @@
                 <h2><strong>{{products.nama}}</strong></h2>
                 <hr>
                 <h4>Harga : <strong>Rp.{{products.harga}}</strong></h4>
-                <form class="mt-3">
+
+                <form class="mt-3" v-on:submit.prevent>
                     <div class="form-group">
                         <label for="jumlah_pemesanan">Jumlah Pesanan</label>
-                        <input type="number" class="form-control" />
+                        <input type="number" class="form-control" v-model="pesanan.jumlah_pemesanan" />
                     </div>
                     <div class="form-group">
                         <label for="jumlah_pemesanan">Keterangan</label>
-                        <textarea class="form-control" placeholder="Keterangan seperti : Pedas, Nasi Setengah dll.."></textarea>
+                        <textarea class="form-control" v-model="pesanan.keterangan" placeholder="Keterangan seperti : Pedas, Nasi Setengah dll.."></textarea>
                     </div>
 
-                    <button class="btn btn-primary" type="submit">
+                    <button class="btn btn-primary" type="submit" @click="pemesanan">
                         <b-icon icon="cart-plus-fill" class="mr-2"></b-icon>Pesan
                     </button>
                 </form>
@@ -60,12 +61,42 @@ export default {
     },
     data() {
         return {
-            products: []
+            products: {},
+            pesanan: {}
         }
     },
     methods: {
         setProduct(data) {
             this.products = data
+        },
+        pemesanan() {
+            if (this.pesanan.jumlah_pemesanan) {
+                this.pesanan.products = this.products
+                axios
+                    .post("http://localhost:3000/keranjangs", this.pesanan)
+                    .then(() => {
+                        this.$router.push({path:"/keranjang"})
+                        this.$toast.success('Sukses Masuk Keranjang', {
+                            // optional options Object
+                            type: 'success',
+                            position: 'top-right',
+                            duration: 2000,
+                            dismissible: true
+                        })
+                    })
+                    .catch((error) =>
+                        // handle error
+                        console.log(error)
+                    )
+            } else {
+                this.$toast.error('Harus Diisi!!', {
+                    // optional options Object
+                    type: 'error',
+                    position: 'top-right',
+                    duration: 2000,
+                    dismissible: true
+                })
+            }
         }
     },
     mounted() {
