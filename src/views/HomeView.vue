@@ -8,8 +8,11 @@
         <div class="row mt-4">
             <div class="col">
                 <h2>Best <strong class="text-primary">Favorite Food</strong> </h2>
+                <router-link to="/menu" class="btn btn-outline-primary d-sm-block d-md-none">
+                    <b-icon icon="eye-fill" class="mr-2"></b-icon>View All
+                </router-link>
             </div>
-            <div class="col">
+            <div class="col d-none d-md-block">
                 <router-link to="/menu" class="btn btn-primary float-right">
                     <b-icon icon="eye-fill" class="mr-2"></b-icon>View All
                 </router-link>
