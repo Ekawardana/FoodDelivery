@@ -89,7 +89,7 @@ export default {
                         console.log(error)
                     )
             } else {
-                this.$toast.error('Harus Diisi!!', {
+                this.$toast.error('Oops, Jumlah Pesanan Harus Diisi!!', {
                     // optional options Object
                     type: 'error',
                     position: 'top-right',
