@@ -1,0 +1,200 @@
+{
+  "best-products": [
+    {
+      "id": 1,
+      "kode": "K-01",
+      "nama": "Sate Ayam",
+      "harga": 16000,
+      "is_ready": true,
+      "gambar": "sate-ayam.jpg"
+    },
+    {
+      "id": 2,
+      "kode": "K-02",
+      "nama": "Nasi Goreng Telur",
+      "harga": 14000,
+      "is_ready": true,
+      "gambar": "nasi-goreng-telor.jpg"
+    },
+    {
+      "id": 3,
+      "kode": "K-03",
+      "nama": "Nasi Rames",
+      "harga": 12000,
+      "is_ready": true,
+      "gambar": "nasi-rames.jpg"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "kode": "K-01",
+      "nama": "Sate Ayam",
+      "harga": 16000,
+      "is_ready": true,
+      "gambar": "sate-ayam.jpg"
+    },
+    {
+      "id": 2,
+      "kode": "K-02",
+      "nama": "Nasi Goreng",
+      "harga": 14000,
+      "is_ready": true,
+      "gambar": "nasi-goreng.jpg"
+    },
+    {
+      "id": 3,
+      "kode": "K-03",
+      "nama": "Nasi Rames",
+      "harga": 12000,
+      "is_ready": true,
+      "gambar": "nasi-rames.jpg"
+    },
+    {
+      "id": 4,
+      "kode": "K-04",
+      "nama": "Spageti",
+      "harga": 14000,
+      "is_ready": true,
+      "gambar": "spageti.jpg"
+    },
+    {
+      "id": 5,
+      "kode": "K-05",
+      "nama": "Pasta",
+      "harga": 13000,
+      "is_ready": true,
+      "gambar": "pasta.jpg"
+    },
+    {
+      "id": 6,
+      "kode": "K-06",
+      "nama": "Bakso Goreng",
+      "harga": 10000,
+      "is_ready": true,
+      "gambar": "bakso-goreng.jpg"
+    },
+    {
+      "id": 7,
+      "kode": "K-07",
+      "nama": "Pangsit 6 pcs",
+      "harga": 5000,
+      "is_ready": true,
+      "gambar": "pangsit.jpg"
+    },
+    {
+      "id": 8,
+      "kode": "K-08",
+      "nama": "Kentang Goreng",
+      "harga": 5000,
+      "is_ready": true,
+      "gambar": "kentang-goreng.jpg"
+    },
+    {
+      "id": 9,
+      "kode": "K-09",
+      "nama": "Lontong Opor Ayam",
+      "harga": 18000,
+      "is_ready": true,
+      "gambar": "lontong-opor-ayam.jpg"
+    },
+    {
+      "id": 10,
+      "kode": "K-10",
+      "nama": "Ayam Bakar Bumbu BBQ",
+      "harga": 30000,
+      "is_ready": true,
+      "gambar": "ayam-bakar2.jpg"
+    },
+    {
+      "id": 11,
+      "kode": "K-11",
+      "nama": "Mie Ayam Bakso",
+      "harga": 19000,
+      "is_ready": true,
+      "gambar": "mie-ayam-bakso2.jpg"
+    },
+    {
+      "id": 12,
+      "kode": "K-12",
+      "nama": "Salmon Creamy",
+      "harga": 25000,
+      "is_ready": true,
+      "gambar": "salmon.jpg"
+    },
+    {
+      "id": 13,
+      "kode": "K-13",
+      "nama": "Ayam Geprek",
+      "harga": 21000,
+      "is_ready": true,
+      "gambar": "nasi-ayam-geprek.jpg"
+    },
+    {
+      "id": 14,
+      "kode": "K-14",
+      "nama": "Nasi Goreng Telur",
+      "harga": 15000,
+      "is_ready": true,
+      "gambar": "nasi-goreng-telor.jpg"
+    },
+    {
+      "id": 15,
+      "kode": "K-15",
+      "nama": "Ramen",
+      "harga": 19000,
+      "is_ready": true,
+      "gambar": "ramen.jpg"
+    },
+    {
+      "id": 16,
+      "kode": "K-16",
+      "nama": "Steak With Potato",
+      "harga": 30000,
+      "is_ready": true,
+      "gambar": "steak.jpg"
+    },
+    {
+      "id": 17,
+      "kode": "K-17",
+      "nama": "Tuna Smoked Garlic",
+      "harga": 26000,
+      "is_ready": true,
+      "gambar": "tuna-panggang.jpg"
+    }
+  ],
+  "keranjangs": [],
+  "pesanans": [
+    {
+      "nama": "Eka Wardana",
+      "noMeja": "2",
+      "keranjangs": [
+        {
+          "jumlah_pemesanan": "2",
+          "products": {
+            "id": 10,
+            "kode": "K-10",
+            "nama": "Ayam Bakar Bumbu BBQ",
+            "harga": 30000,
+            "is_ready": true,
+            "gambar": "ayam-bakar2.jpg"
+          },
+          "id": 1
+        },
+        {
+          "jumlah_pemesanan": "3",
+          "products": {
+            "id": 16,
+            "kode": "K-16",
+            "nama": "Steak With Potato",
+            "harga": 30000,
+            "is_ready": true,
+            "gambar": "steak.jpg"
+          },
+          "id": 2
+        }
+      ],
+      "id": 1
+    }
+  ]
+}
